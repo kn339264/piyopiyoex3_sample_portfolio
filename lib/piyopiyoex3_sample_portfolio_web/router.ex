@@ -18,6 +18,8 @@ defmodule Piyopiyoex3SamplePortfolioWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+
+    live "/portfolios", PortfolioLive.Index, :index
   end
 
   # Other scopes may use custom stacks.
